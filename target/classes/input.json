@@ -1,0 +1,73 @@
+{
+  "overdraftAuthN": {
+    "expiryDate": {
+      "comparator": "NOT EQUALS",
+      "date2": "2020-11-05+01:00",
+      "date1": "2020-11-05+01:00"
+    },
+    "startDateOfOverdraftLimit": {
+      "comparator": "NOT EQUALS",
+      "date2": "2020-11-05+01:00",
+      "date1": "2020-11-05+01:00"
+    },
+    "overdraftAuthNIdentifier": {
+      "orderNumber": 2,
+      "currency": {
+        "designation": "FRANC CFA",
+        "alphaCode": "XOF",
+        "numericCode": "001"
+      },
+      "branch": {
+        "code": "001",
+        "designation": "FRANC CFA"
+      },
+      "account": {
+        "externalFormatAccount": {
+          "value": 251130
+        },
+        "internalFormatAccountOurBranch": {
+          "currency": {
+            "designation": "FRANC CFA",
+            "alphaCode": "XOF",
+            "numericCode": "001"
+          },
+          "suffix": 695111,
+          "branch": {
+            "code": "001",
+            "designation": "FRANC CFA"
+          },
+          "account": 0
+        },
+        "ibanFormatAccount": {
+          "value": 251130
+        }
+      },
+      "authorisationNumber": "authorisationNumber"
+    },
+    "overdraftLimitValue": {
+      "comparator": "NOT EQUALS",
+      "amount2": 20,
+      "amount1": 20,
+      "currency": {
+        "numberOfDecimals": 0,
+        "currency": {
+          "designation": "FRANC CFA",
+          "alphaCode": "XOF",
+          "numericCode": "001"
+        }
+      }
+    },
+    "overdraftAuthNType": {
+      "code": "001",
+      "designation": "FRANC CFA"
+    },
+    "overdraftLimitSituation": "O",
+    "overdraftLimitStatus": "VA",
+    "endDateOfOverdraftLimit": {
+      "comparator": "NOT EQUALS",
+      "date2": "2020-11-05+01:00",
+      "date1": "2020-11-05+01:00"
+    },
+    "occasionalAuthorisation": false
+  }
+}

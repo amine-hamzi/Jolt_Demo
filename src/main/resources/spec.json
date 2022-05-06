@@ -1,0 +1,145 @@
+[
+  {
+    "operation": "cardinality",
+    "spec": {
+      "overdraftAuthN":"MANY"
+    }
+  },
+  {
+    "operation": "shift",
+    "spec": {
+      "overdraftAuthN": {
+        "*": {
+          "expiryDate": {
+            "comparator": {
+              "NOT EQUALS": {
+                "#NOT_EQUALS": "overdraftAuthN[&4].expiryDate.comparator"
+              },
+              "BETWEEN EQUALS": {
+                "#BETWEEN_EQUALS": "overdraftAuthN[&4].expiryDate.comparator"
+              },
+              "GREATER EQUALS": {
+                "#GREATER_EQUALS": "overdraftAuthN[&4].expiryDate.comparator"
+              },
+              "GREATER THAN": {
+                "#GREATER_THAN": "overdraftAuthN[&4].expiryDate.comparator"
+              },
+              "LOWER EQUALS": {
+                "#LOWER_EQUALS": "overdraftAuthN[&4].expiryDate.comparator"
+              },
+              "LOWER THAN": {
+                "#LOWER_THAN": "overdraftAuthN[&4].expiryDate.comparator"
+              },
+              "BETWEEN": {
+                "#BETWEEN ": "overdraftAuthN[&4].expiryDate.comparator"
+              },
+              "EQUALS": {
+                "#EQUALS": "overdraftAuthN[&4].expiryDate.comparator"
+              }
+            },
+            "*": "overdraftAuthN[&2].expiryDate.&"
+          },
+          "startDateOfOverdraftLimit": {
+            "comparator": {
+              "NOT EQUALS": {
+                "#NOT_EQUALS": "overdraftAuthN[&4].startDateOfOverdraftLimit.comparator"
+              },
+              "BETWEEN EQUALS": {
+                "#BETWEEN_EQUALS": "overdraftAuthN[&4].startDateOfOverdraftLimit.comparator"
+              },
+              "GREATER EQUALS": {
+                "#GREATER_EQUALS": "overdraftAuthN[&4].startDateOfOverdraftLimit.comparator"
+              },
+              "GREATER THAN": {
+                "#GREATER_THAN": "overdraftAuthN[&4].startDateOfOverdraftLimit.comparator"
+              },
+              "LOWER EQUALS": {
+                "#LOWER_EQUALS": "overdraftAuthN[&4].startDateOfOverdraftLimit.comparator"
+              },
+              "LOWER THAN": {
+                "#LOWER_THAN": "overdraftAuthN[&4].startDateOfOverdraftLimit.comparator"
+              },
+              "BETWEEN": {
+                "#BETWEEN ": "overdraftAuthN[&4].startDateOfOverdraftLimit.comparator"
+              },
+              "EQUALS": {
+                "#EQUALS": "overdraftAuthN[&4].startDateOfOverdraftLimit.comparator"
+              }
+            },
+            "*": "overdraftAuthN[&2].startDateOfOverdraftLimit.&"
+          },
+          "overdraftLimitValue": {
+            "comparator": {
+              "NOT EQUALS": {
+                "#NOT_EQUALS": "overdraftAuthN[&4].overdraftLimitValue.comparator"
+              },
+              "BETWEEN EQUALS": {
+                "#BETWEEN_EQUALS": "overdraftAuthN[&4].overdraftLimitValue.comparator"
+              },
+              "GREATER EQUALS": {
+                "#GREATER_EQUALS": "overdraftAuthN[&4].overdraftLimitValue.comparator"
+              },
+              "GREATER THAN": {
+                "#GREATER_THAN": "overdraftAuthN[&4].overdraftLimitValue.comparator"
+              },
+              "LOWER EQUALS": {
+                "#LOWER_EQUALS": "overdraftAuthN[&4].overdraftLimitValue.comparator"
+              },
+              "LOWER THAN": {
+                "#LOWER_THAN": "overdraftAuthN[&4].overdraftLimitValue.comparator"
+              },
+              "BETWEEN": {
+                "#BETWEEN ": "overdraftAuthN[&4].overdraftLimitValue.comparator"
+              },
+              "EQUALS": {
+                "#EQUALS": "overdraftAuthN[&4].overdraftLimitValue.comparator"
+              }
+            },
+            "*": "overdraftAuthN[&2].overdraftLimitValue.&"
+          },
+          "endDateOfOverdraftLimit": {
+            "comparator": {
+              "NOT EQUALS": {
+                "#NOT_EQUALS": "overdraftAuthN[&4].endDateOfOverdraftLimit.comparator"
+              },
+              "BETWEEN EQUALS": {
+                "#BETWEEN_EQUALS": "overdraftAuthN[&4].endDateOfOverdraftLimit.comparator"
+              },
+              "GREATER EQUALS": {
+                "#GREATER_EQUALS": "overdraftAuthN[&4].endDateOfOverdraftLimit.comparator"
+              },
+              "GREATER THAN": {
+                "#GREATER_THAN": "overdraftAuthN[&4].endDateOfOverdraftLimit.comparator"
+              },
+              "LOWER EQUALS": {
+                "#LOWER_EQUALS": "overdraftAuthN[&4].endDateOfOverdraftLimit.comparator"
+              },
+              "LOWER THAN": {
+                "#LOWER_THAN": "overdraftAuthN[&4].endDateOfOverdraftLimit.comparator"
+              },
+              "BETWEEN": {
+                "#BETWEEN ": "overdraftAuthN[&4].endDateOfOverdraftLimit.comparator"
+              },
+              "EQUALS": {
+                "#EQUALS": "overdraftAuthN[&4].endDateOfOverdraftLimit.comparator"
+              }
+            },
+            "*": "overdraftAuthN[&2].endDateOfOverdraftLimit.&"
+          },
+          "overdraftLimitSituation": {
+            "O": {
+              "#OPEN": "overdraftAuthN[&3].overdraftLimitSituation"
+            },
+            "M": {
+              "#AMENDED": "overdraftAuthN[&3].overdraftLimitSituation"
+            },
+            "A": {
+              "#CANCELED": "overdraftAuthN[&3].overdraftLimitSituation"
+            }
+          },
+          "*": "overdraftAuthN[&1].&"
+        }
+      }
+    }
+  }
+]
